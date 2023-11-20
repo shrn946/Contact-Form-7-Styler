@@ -7,7 +7,9 @@ Author: Hassan Naqvi
 */
 
 // Disable automatic <p> and <br> tags by Contact Form 7
-define('WPCF7_AUTOP', false);
+if ( ! defined( 'WPCF7_AUTOP' ) ) {
+    define( 'WPCF7_AUTOP', false );
+}
 
 // Enqueue styles and scripts
 function cfw_styler_enqueue_scripts() {
